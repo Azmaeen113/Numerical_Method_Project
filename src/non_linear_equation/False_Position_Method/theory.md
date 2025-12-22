@@ -23,3 +23,4 @@ Algorithm:
    - Repeat until convergence or max iterations
 6. Output the root
 
+

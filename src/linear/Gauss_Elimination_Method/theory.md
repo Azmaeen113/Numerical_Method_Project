@@ -27,3 +27,4 @@ Algorithm:
 Matrix Representation:
 Initial: [A|b] → After elimination: [U|b'] → Solution: x
 
+

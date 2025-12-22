@@ -27,3 +27,4 @@ To solve Ax = b using LU:
 1. Forward substitution: Solve Ly = b for y
 2. Back substitution: Solve Ux = y for x
 
+

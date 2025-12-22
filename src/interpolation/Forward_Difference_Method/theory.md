@@ -26,3 +26,4 @@ Algorithm:
 8. Apply Newton's forward formula to compute result
 9. Output the interpolated value
 
+

@@ -28,3 +28,4 @@ Algorithm:
 7. Calculate predicted value: result = m×v + c
 8. Output the predicted value
 
+

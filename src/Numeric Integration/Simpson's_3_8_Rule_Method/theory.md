@@ -22,3 +22,4 @@ Algorithm:
 5. Calculate result = (3*h/8) * sum
 6. Output the result
 
+

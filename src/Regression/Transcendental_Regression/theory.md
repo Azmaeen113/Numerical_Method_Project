@@ -33,3 +33,4 @@ Algorithm:
 8. Calculate: result = a·e^(b×v) = e^C·e^(b×v)
 9. Output the predicted value
 
+

@@ -27,3 +27,4 @@ Algorithm:
    - f'(x) = (1/h)[Δy₀ + ((2u-1)/2)Δ²y₀ + ((3u²-6u+2)/6)Δ³y₀ + ...]
 8. Output the derivative value
 
+

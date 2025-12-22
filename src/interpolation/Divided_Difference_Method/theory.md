@@ -25,3 +25,4 @@ Algorithm:
    - For each term, multiply by (xp - previous x values) and add DD coefficient
 7. Output the interpolated value
 
+

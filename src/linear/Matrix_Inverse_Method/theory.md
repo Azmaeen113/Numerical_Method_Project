@@ -27,3 +27,4 @@ Algorithm:
    - A⁻¹[i][j] = adj[i][j] / det(A)
 7. Output the inverse matrix
 
+

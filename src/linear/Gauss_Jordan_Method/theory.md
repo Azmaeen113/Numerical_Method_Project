@@ -20,3 +20,4 @@ Algorithm:
 4. Solution is directly in the last column: x[i] = a[i][n]
 5. Output the solution vector
 
+

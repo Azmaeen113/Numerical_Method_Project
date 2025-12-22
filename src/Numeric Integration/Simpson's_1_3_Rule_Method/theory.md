@@ -22,3 +22,4 @@ Algorithm:
 5. Calculate result = (h/3) * sum
 6. Output the result
 
+

@@ -27,3 +27,4 @@ Algorithm:
    - f'(x) = (1/h)[∇y_n + ((2u+1)/2)∇²y_n + ((3u²+6u+2)/6)∇³y_n + ...]
 8. Output the derivative value
 
+

@@ -30,3 +30,4 @@ Algorithm:
 7. Calculate: result = a + b×v + c×v²
 8. Output the predicted value
 
+

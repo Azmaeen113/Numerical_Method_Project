@@ -22,3 +22,4 @@ Algorithm:
    - Repeat until convergence or max iterations
 5. Output the root
 
+
