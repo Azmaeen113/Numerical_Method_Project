@@ -1,0 +1,12 @@
+Enter the number of data points: Enter the data points (x and y):
+x[0] and y[0]: x[1] and y[1]: x[2] and y[2]: x[3] and y[3]: x[4] and y[4]: 
+Backward Difference Table:
+         x         y      ∇^1y      ∇^2y      ∇^3y      ∇^4y
+         0      1.0000
+         1      2.0000      1.0000
+         2      5.0000      3.0000      2.0000
+         3     10.0000      5.0000      2.0000      0.0000
+         4     17.0000      7.0000      2.0000      0.0000      0.0000
+
+Enter the value of x for interpolation: 
+Interpolated value at x = 3.5 is: 13.125000

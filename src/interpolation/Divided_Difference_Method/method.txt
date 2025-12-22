@@ -1,0 +1,34 @@
+DIVIDED DIFFERENCE INTERPOLATION METHOD (Newton's Divided Difference Formula)
+
+Theory:
+Divided difference interpolation, also known as Newton's divided difference method, is a polynomial interpolation technique that works with both equally and unequally spaced data points. It's more flexible than forward or backward difference methods and is widely used in numerical analysis.
+
+Formula:
+f(x) = f[x₀] + (x-x₀)f[x₀,x₁] + (x-x₀)(x-x₁)f[x₀,x₁,x₂] + ...
+
+where f[x₀,x₁,...,xₖ] represents the kth order divided difference:
+f[xᵢ] = f(xᵢ)
+f[xᵢ,xᵢ₊₁] = (f[xᵢ₊₁] - f[xᵢ]) / (xᵢ₊₁ - xᵢ)
+f[xᵢ,xᵢ₊₁,...,xᵢ₊ₖ] = (f[xᵢ₊₁,...,xᵢ₊ₖ] - f[xᵢ,...,xᵢ₊ₖ₋₁]) / (xᵢ₊ₖ - xᵢ)
+
+Algorithm:
+1. Input number of data points n
+2. Input x and y values for all data points
+3. Construct divided difference table:
+   - For each order j from 1 to n-1:
+     - For each row i from 0 to n-j-1:
+       - Calculate DD[i][j] = (DD[i+1][j-1] - DD[i][j-1]) / (x[i+j] - x[i])
+4. Display the divided difference table
+5. Input the value xp for interpolation
+6. Apply Newton's divided difference formula:
+   - Start with result = y[0][0]
+   - For each term, multiply by (xp - previous x values) and add DD coefficient
+7. Output the interpolated value
+
+Features:
+- Works with both equally and unequally spaced data
+- More flexible than forward/backward difference methods
+- Constructs nth degree polynomial for n+1 data points
+- Divided differences are symmetric
+- Can be computed recursively
+- Useful for arbitrary data spacing

@@ -1,0 +1,34 @@
+BACKWARD DIFFERENCE INTERPOLATION METHOD (Newton's Backward Formula)
+
+Theory:
+Backward difference interpolation is a method for estimating function values using Newton's backward difference formula. It is particularly useful when we need to interpolate near the end of a data set with equally spaced points. The method constructs a polynomial that passes through all given data points.
+
+Formula:
+f(x) = f(xₙ) + u∇f(xₙ) + u(u+1)/2!·∇²f(xₙ) + u(u+1)(u+2)/3!·∇³f(xₙ) + ...
+
+where:
+- u = (x - xₙ)/h
+- h = spacing between consecutive x values
+- ∇ represents the backward difference operator
+- xₙ is the last point in the data set
+
+Algorithm:
+1. Input number of data points n
+2. Input x and y values for all data points
+3. Calculate step size h = x[1] - x[0]
+4. Construct backward difference table:
+   - For each order j from 1 to n-1:
+     - For each row i from n-1 down to j:
+       - Calculate ∇ʲy[i] = ∇ʲ⁻¹y[i] - ∇ʲ⁻¹y[i-1]
+5. Display the backward difference table
+6. Input the value xp for interpolation
+7. Calculate u = (xp - x[n-1]) / h
+8. Apply Newton's backward formula to compute result
+9. Output the interpolated value
+
+Features:
+- Best suited for interpolation near the end of the table
+- Requires equally spaced data points
+- Constructs nth degree polynomial for n+1 data points
+- Uses backward differences computed from the last point
+- More accurate when interpolating near the end of data range

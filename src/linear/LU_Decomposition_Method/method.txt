@@ -1,0 +1,36 @@
+LU DECOMPOSITION METHOD (Doolittle's Method)
+
+Theory:
+LU decomposition factorizes a matrix A into the product of a lower triangular matrix L and an upper triangular matrix U, such that A = LU. This method is particularly efficient when solving multiple systems with the same coefficient matrix but different right-hand sides.
+
+Decomposition:
+A = L × U
+
+where:
+- L is lower triangular with 1's on diagonal (Doolittle's convention)
+- U is upper triangular
+
+Algorithm (Doolittle's Method):
+1. Input the size n and matrix A
+2. Initialize L and U as zero matrices
+3. For i = 0 to n-1:
+   a. Calculate U matrix (upper triangular):
+      - For k = i to n-1:
+        - U[i][k] = A[i][k] - Σ(L[i][j] * U[j][k]) for j=0 to i-1
+   b. Calculate L matrix (lower triangular):
+      - Set L[i][i] = 1 (diagonal elements)
+      - For k = i+1 to n-1:
+        - L[k][i] = (A[k][i] - Σ(L[k][j] * U[j][i]) for j=0 to i-1) / U[i][i]
+4. Output matrices L and U
+
+To solve Ax = b using LU:
+1. Forward substitution: Solve Ly = b for y
+2. Back substitution: Solve Ux = y for x
+
+Features:
+- Efficient for multiple systems with same A
+- Time complexity: O(n³) for decomposition
+- Only O(n²) for each solve after decomposition
+- Useful in computing determinants: det(A) = det(L)×det(U)
+- Can be used to find matrix inverse
+- Requires non-zero pivots

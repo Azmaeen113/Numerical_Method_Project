@@ -1,0 +1,35 @@
+FORWARD DIFFERENCE INTERPOLATION METHOD (Newton's Forward Formula)
+
+Theory:
+Forward difference interpolation uses Newton's forward difference formula to estimate function values. This method is most effective when interpolating near the beginning of a data set with equally spaced points. It constructs a polynomial passing through all given data points using forward differences.
+
+Formula:
+f(x) = f(x₀) + uΔf(x₀) + u(u-1)/2!·Δ²f(x₀) + u(u-1)(u-2)/3!·Δ³f(x₀) + ...
+
+where:
+- u = (x - x₀)/h
+- h = spacing between consecutive x values
+- Δ represents the forward difference operator
+- x₀ is the first point in the data set
+
+Algorithm:
+1. Input number of data points n
+2. Input x and y values for all data points
+3. Calculate step size h = x[1] - x[0]
+4. Construct forward difference table:
+   - For each order j from 1 to n-1:
+     - For each row i from 0 to n-j-1:
+       - Calculate Δʲy[i] = Δʲ⁻¹y[i+1] - Δʲ⁻¹y[i]
+5. Display the forward difference table
+6. Input the value xp for interpolation
+7. Calculate u = (xp - x[0]) / h
+8. Apply Newton's forward formula to compute result
+9. Output the interpolated value
+
+Features:
+- Best suited for interpolation near the beginning of the table
+- Requires equally spaced data points
+- Constructs nth degree polynomial for n+1 data points
+- Uses forward differences computed from the first point
+- More accurate when interpolating near the start of data range
+- Commonly used in numerical analysis

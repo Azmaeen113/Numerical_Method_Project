@@ -1,0 +1,11 @@
+Enter the number of data points: Enter the data points (x and y):
+x[0] and y[0]: x[1] and y[1]: x[2] and y[2]: x[3] and y[3]: 
+Divided Difference Table:
+         x            y         DD[1]         DD[2]         DD[3]
+    1.0000      1.000000      7.000000      6.000000      1.000000
+    2.0000      8.000000     19.000000     12.000000
+    3.0000     27.000000     49.000000
+    5.0000    125.000000
+
+Enter the value of x for interpolation: 
+Interpolated value at x = 4 is: 64.000000

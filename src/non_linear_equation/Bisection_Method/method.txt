@@ -1,0 +1,32 @@
+BISECTION METHOD
+
+Theory:
+The bisection method is a root-finding algorithm that repeatedly bisects an interval and selects a subinterval where a root must lie. It's based on the Intermediate Value Theorem: if f(a) and f(b) have opposite signs, then f(x) = 0 has at least one root in [a, b].
+
+Principle:
+- If f(a) × f(b) < 0, then a root exists in [a, b]
+- At each step, the interval is halved
+- The method always converges for continuous functions
+
+Algorithm:
+1. Input polynomial degree and coefficients
+2. Input initial point a, second point b, step size, tolerance, max iterations
+3. Find bracketing interval [a, b] where f(a) × f(b) < 0:
+   - Expand search left and right from point a
+4. Bisection iteration:
+   - Calculate midpoint: mid = (a + b) / 2
+   - Calculate f(mid)
+   - If |f(mid)| < tolerance or |b - a| < tolerance: root found
+   - If f(a) × f(mid) < 0: set b = mid
+   - Else: set a = mid, update f(a)
+   - Repeat until convergence or max iterations
+5. Output the root
+
+Features:
+- Always converges if initial bracket is valid
+- Simple and robust
+- Guaranteed to find a root if one exists
+- Linear convergence rate
+- Requires sign change in interval
+- Convergence is slow compared to Newton-Raphson
+- Error reduces by half each iteration

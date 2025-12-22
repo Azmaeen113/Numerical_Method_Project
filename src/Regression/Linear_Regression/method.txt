@@ -1,0 +1,38 @@
+LINEAR REGRESSION (Least Squares Method)
+
+Theory:
+Linear regression finds the best-fitting straight line through a set of data points using the method of least squares. The goal is to minimize the sum of squared differences between observed values and predicted values. This produces a line y = mx + c that best represents the relationship between variables.
+
+Equation:
+y = mx + c
+
+where:
+- m is the slope
+- c is the y-intercept
+
+Formulas:
+m = (n·Σ(xy) - Σx·Σy) / (n·Σ(x²) - (Σx)²)
+c = (Σy - m·Σx) / n
+
+Algorithm:
+1. Input number of data points n
+2. Input x and y values for all data points
+3. Calculate summations:
+   - Σx = sum of all x values
+   - Σy = sum of all y values
+   - Σ(xy) = sum of products x[i]×y[i]
+   - Σ(x²) = sum of squares x[i]²
+4. Calculate slope m using formula
+5. Calculate intercept c using formula
+6. Input value v where prediction is needed
+7. Calculate predicted value: result = m×v + c
+8. Output the predicted value
+
+Features:
+- Simple and widely used regression method
+- Fits a straight line to data
+- Minimizes sum of squared errors
+- Useful for understanding linear relationships
+- Provides predictions for new data points
+- Can measure goodness of fit using R² value
+- Foundation for more complex regression techniques

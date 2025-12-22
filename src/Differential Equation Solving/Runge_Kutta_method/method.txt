@@ -1,0 +1,37 @@
+RUNGE-KUTTA 4TH ORDER METHOD (RK4)
+
+Theory:
+The Runge-Kutta method is a powerful numerical technique for solving ordinary differential equations (ODEs) of the form dy/dx = f(x,y). The 4th order Runge-Kutta (RK4) method is one of the most popular and accurate single-step methods for solving initial value problems.
+
+Formula:
+For dy/dx = f(x, y) with initial condition y(x₀) = y₀
+
+k₁ = h·f(x, y)
+k₂ = h·f(x + h/2, y + k₁/2)
+k₃ = h·f(x + h/2, y + k₂/2)
+k₄ = h·f(x + h, y + k₃)
+
+yₙ₊₁ = yₙ + (k₁ + 2k₂ + 2k₃ + k₄)/6
+
+where h is the step size.
+
+Algorithm:
+1. Input initial values: x₀, y₀, final value xₙ, and step size h
+2. Set x = x₀ and y = y₀
+3. While x < xₙ:
+   a. Calculate k₁ = h·f(x, y)
+   b. Calculate k₂ = h·f(x + h/2, y + k₁/2)
+   c. Calculate k₃ = h·f(x + h/2, y + k₂/2)
+   d. Calculate k₄ = h·f(x + h, y + k₃)
+   e. Update y = y + (k₁ + 2k₂ + 2k₃ + k₄)/6
+   f. Update x = x + h
+   g. Output (x, y)
+4. End
+
+Features:
+- Fourth-order accurate (error ~ O(h⁵))
+- Self-starting method (doesn't require previous points)
+- More accurate than Euler's method
+- Good balance between accuracy and computational cost
+- Widely used in engineering and scientific applications
+- Works well for smooth functions

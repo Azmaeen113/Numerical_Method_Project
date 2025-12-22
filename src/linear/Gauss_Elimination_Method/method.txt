@@ -1,0 +1,36 @@
+GAUSS ELIMINATION METHOD
+
+Theory:
+Gauss elimination is a systematic method for solving systems of linear equations. It transforms the augmented matrix into an upper triangular form through row operations, then uses back substitution to find the solution. This is one of the most fundamental algorithms in numerical linear algebra.
+
+Process:
+1. Forward Elimination: Transform the augmented matrix to upper triangular form
+2. Back Substitution: Solve for variables starting from the last equation
+
+Algorithm:
+1. Input the number of equations n
+2. Input the augmented matrix [A|b] where Ax = b
+3. Forward Elimination:
+   - For i = 0 to n-1:
+     - For j = i+1 to n-1:
+       - Calculate factor = a[j][i] / a[i][i]
+       - For k = i to n:
+         - a[j][k] = a[j][k] - factor * a[i][k]
+4. Back Substitution:
+   - For i = n-1 down to 0:
+     - x[i] = a[i][n]
+     - For j = i+1 to n-1:
+       - x[i] = x[i] - a[i][j] * x[j]
+     - x[i] = x[i] / a[i][i]
+5. Output the solution vector x
+
+Matrix Representation:
+Initial: [A|b] → After elimination: [U|b'] → Solution: x
+
+Features:
+- Straightforward implementation
+- Time complexity: O(n³)
+- Converts matrix to upper triangular form
+- Requires non-zero pivot elements
+- May need partial pivoting for numerical stability
+- Widely used in scientific computing
