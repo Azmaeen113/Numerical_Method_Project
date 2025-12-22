@@ -27,10 +27,3 @@ To solve Ax = b using LU:
 1. Forward substitution: Solve Ly = b for y
 2. Back substitution: Solve Ux = y for x
 
-Features:
-- Efficient for multiple systems with same A
-- Time complexity: O(n³) for decomposition
-- Only O(n²) for each solve after decomposition
-- Useful in computing determinants: det(A) = det(L)×det(U)
-- Can be used to find matrix inverse
-- Requires non-zero pivots

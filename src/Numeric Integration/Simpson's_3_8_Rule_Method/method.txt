@@ -22,9 +22,3 @@ Algorithm:
 5. Calculate result = (3*h/8) * sum
 6. Output the result
 
-Features:
-- More accurate than trapezoidal rule for smooth functions
-- Requires n to be a multiple of 3
-- Uses cubic polynomial approximation
-- Error is O(h⁴)
-- Good for functions with continuous fourth derivatives

@@ -23,11 +23,3 @@ Algorithm:
    - Repeat until convergence or max iterations
 6. Output the root
 
-Features:
-- Better convergence than bisection method
-- Always converges for continuous functions
-- Uses linear interpolation for better approximation
-- One endpoint may remain fixed (slower than secant method)
-- More accurate than bisection with similar reliability
-- Superlinear convergence in favorable cases
-- Guaranteed bracketing of root maintained

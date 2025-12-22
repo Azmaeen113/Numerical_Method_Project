@@ -20,12 +20,3 @@ Algorithm:
 4. Solution is directly in the last column: x[i] = a[i][n]
 5. Output the solution vector
 
-Features:
-- Produces reduced row echelon form (RREF)
-- No back substitution needed
-- Includes partial pivoting for stability
-- Time complexity: O(n³)
-- Solution can be read directly
-- More computationally expensive than Gauss elimination
-- Useful for finding matrix inverses
-- Better numerical stability with pivoting

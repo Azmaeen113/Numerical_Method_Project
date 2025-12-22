@@ -26,9 +26,3 @@ Algorithm:
 8. Apply Newton's backward formula to compute result
 9. Output the interpolated value
 
-Features:
-- Best suited for interpolation near the end of the table
-- Requires equally spaced data points
-- Constructs nth degree polynomial for n+1 data points
-- Uses backward differences computed from the last point
-- More accurate when interpolating near the end of data range

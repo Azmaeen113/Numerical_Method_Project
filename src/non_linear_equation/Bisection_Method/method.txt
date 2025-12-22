@@ -22,11 +22,3 @@ Algorithm:
    - Repeat until convergence or max iterations
 5. Output the root
 
-Features:
-- Always converges if initial bracket is valid
-- Simple and robust
-- Guaranteed to find a root if one exists
-- Linear convergence rate
-- Requires sign change in interval
-- Convergence is slow compared to Newton-Raphson
-- Error reduces by half each iteration

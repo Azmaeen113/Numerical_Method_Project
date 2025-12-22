@@ -22,10 +22,3 @@ Algorithm:
 5. Calculate result = (h/3) * sum
 6. Output the result
 
-Features:
-- More accurate than trapezoidal rule
-- Requires n to be even
-- Uses quadratic polynomial approximation
-- Error is O(h⁴)
-- Widely used for smooth functions
-- Third-order accurate method

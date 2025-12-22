@@ -33,10 +33,3 @@ Algorithm:
 8. Calculate: result = a·e^(b×v) = e^C·e^(b×v)
 9. Output the predicted value
 
-Features:
-- Models exponential growth/decay
-- Transforms non-linear to linear problem
-- Useful for population growth, radioactive decay, etc.
-- Requires all y values to be positive (for logarithm)
-- Good for data spanning several orders of magnitude
-- Common in biological and financial modeling

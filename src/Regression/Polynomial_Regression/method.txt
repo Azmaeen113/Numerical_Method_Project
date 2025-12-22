@@ -30,10 +30,3 @@ Algorithm:
 7. Calculate: result = a + b×v + c×v²
 8. Output the predicted value
 
-Features:
-- Fits curved relationships in data
-- More flexible than linear regression
-- Can capture non-linear trends
-- Useful for data with turning points
-- Higher-degree polynomials possible but risk overfitting
-- Good for smooth, continuous relationships

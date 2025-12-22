@@ -25,10 +25,3 @@ Algorithm:
    - For each term, multiply by (xp - previous x values) and add DD coefficient
 7. Output the interpolated value
 
-Features:
-- Works with both equally and unequally spaced data
-- More flexible than forward/backward difference methods
-- Constructs nth degree polynomial for n+1 data points
-- Divided differences are symmetric
-- Can be computed recursively
-- Useful for arbitrary data spacing

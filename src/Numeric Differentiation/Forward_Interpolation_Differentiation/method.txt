@@ -27,11 +27,3 @@ Algorithm:
    - f'(x) = (1/h)[Δy₀ + ((2u-1)/2)Δ²y₀ + ((3u²-6u+2)/6)Δ³y₀ + ...]
 8. Output the derivative value
 
-Features:
-- Best suited for differentiation near the beginning of data
-- Uses forward differences from the first point
-- Requires equally spaced data points
-- Accuracy depends on number of differences used
-- Commonly used in numerical analysis
-- More accurate near the start of the table
-- Efficient for initial value problems

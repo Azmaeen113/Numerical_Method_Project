@@ -28,11 +28,3 @@ Algorithm:
 7. Calculate predicted value: result = m×v + c
 8. Output the predicted value
 
-Features:
-- Simple and widely used regression method
-- Fits a straight line to data
-- Minimizes sum of squared errors
-- Useful for understanding linear relationships
-- Provides predictions for new data points
-- Can measure goodness of fit using R² value
-- Foundation for more complex regression techniques

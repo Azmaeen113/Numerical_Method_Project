@@ -22,12 +22,3 @@ Algorithm:
    - Repeat until convergence or max iterations
 5. Output the root
 
-Features:
-- Quadratic convergence near the root (very fast)
-- Requires calculation of derivative
-- Needs a good initial guess
-- May diverge if initial guess is poor
-- Fails if f'(x) = 0 at any iteration
-- Most efficient when it converges
-- Widely used in engineering and scientific computing
-- Can find complex roots with complex initial guess

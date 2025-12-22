@@ -26,10 +26,3 @@ Algorithm:
 8. Apply Newton's forward formula to compute result
 9. Output the interpolated value
 
-Features:
-- Best suited for interpolation near the beginning of the table
-- Requires equally spaced data points
-- Constructs nth degree polynomial for n+1 data points
-- Uses forward differences computed from the first point
-- More accurate when interpolating near the start of data range
-- Commonly used in numerical analysis

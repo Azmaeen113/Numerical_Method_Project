@@ -27,10 +27,3 @@ Algorithm:
    - A⁻¹[i][j] = adj[i][j] / det(A)
 7. Output the inverse matrix
 
-Features:
-- Uses adjoint-determinant formula
-- Works for any square matrix with non-zero determinant
-- Time complexity: O(n!)  due to recursive determinant calculation
-- Not efficient for large matrices
-- Good for small matrices and theoretical purposes
-- Ensures A × A⁻¹ = I

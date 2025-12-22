@@ -23,12 +23,3 @@ Algorithm:
    - Repeat until convergence or max iterations
 6. Output the root
 
-Features:
-- Doesn't require derivative calculation
-- Faster than bisection and false position methods
-- Superlinear convergence (order ≈ 1.618, golden ratio)
-- Requires two initial guesses
-- No guarantee of convergence (unlike bisection)
-- May fail if secant becomes horizontal
-- Good alternative when derivative is expensive to compute
-- Widely used in practice

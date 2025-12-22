@@ -27,10 +27,3 @@ Algorithm:
 Matrix Representation:
 Initial: [A|b] → After elimination: [U|b'] → Solution: x
 
-Features:
-- Straightforward implementation
-- Time complexity: O(n³)
-- Converts matrix to upper triangular form
-- Requires non-zero pivot elements
-- May need partial pivoting for numerical stability
-- Widely used in scientific computing

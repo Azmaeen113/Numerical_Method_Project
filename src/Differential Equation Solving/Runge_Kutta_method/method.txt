@@ -28,10 +28,3 @@ Algorithm:
    g. Output (x, y)
 4. End
 
-Features:
-- Fourth-order accurate (error ~ O(h⁵))
-- Self-starting method (doesn't require previous points)
-- More accurate than Euler's method
-- Good balance between accuracy and computational cost
-- Widely used in engineering and scientific applications
-- Works well for smooth functions
